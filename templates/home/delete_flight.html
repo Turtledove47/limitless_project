@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Ștergere zbor{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="col-md-6 offset-md-3">
+            <br><br>
+            <div class="card">
+                <form method="post">
+                    {% csrf_token %}
+                    <br><br>
+                    <h4 class="text-center">Ești pe cale să ștergi permanent acest zbor, ești sigur?</h4><br><br>
+                    <div class="card-footer text-center">
+                        <a href="{% url 'list-of-flights' %}" class="btn btn-outline-primary">Nu, du-mă înapoi</a>
+                        <button type="submit" class="btn btn-danger">Da</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

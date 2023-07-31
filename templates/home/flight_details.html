@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} Detalii zbor {% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card text-center ">
+                    <div class="card-header">
+                        <h4>Zbor înregistrat la: {{ flightlog.created_at|date:"d-m-Y // H:i:s" }}</h4>
+                    </div>
+                    <div class="card-body ">
+                        <p class="card-text">
+                            <h3>Latitudine: {{ flightlog.latitude }}</h3>
+                        </p>
+                        <p class="card-text">
+                            <h3>Longitudine: {{ flightlog.longitude }}</h3>
+                        </p>
+                        <p class="card-text">
+                            <h3>Detalii: {{ flightlog.details }}</h3>
+                        </p>
+                        <p class="card-text">
+                            <h3>Baterii zburate: {{ flightlog.batteries_flown }}</h3>
+                        </p>
+                        <br>
+                        <a href="{% url 'list-of-flights' %}" class="btn btn-primary"><h5>Înapoi la toate</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

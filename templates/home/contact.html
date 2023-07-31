@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Formular contact{% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+    <br>
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Formular de contact</h3>
+                </div>
+                <br><br>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="card-body">
+                        {{ form.as_p }}
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="submit" class="btn btn-info">Trimite</button>
+                        <a href="{% url 'homepage' %}" class="btn btn-outline-danger">Renunță</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

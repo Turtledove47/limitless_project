@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Pilot nou{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Formular creare operator</h3>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="card-body">
+                            {{ form.as_p }}
+                        </div>
+                        <p class="ps-2 ms-1">***Username-ul va fi generat automat și va fi trimis pe adresa de e-mail după înregistrare.</p>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-outline-info">Crează operator</button>
+                        </div>
+                    </form>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Resetare parolă {% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <br><br>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center fs-2 mb-2">Resetare parolă</h3>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="card-body">
+                            {{ form.as_p }}
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-info">Trimite e-mail de resetare</button>
+                            <a href="{% url 'home_page' %}" class="btn btn-outline-danger">Renunță</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

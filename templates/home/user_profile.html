@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Profil{% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Profilul lui {{ user.username.title }}
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Codul tău de pilot este: {{ user.caa_code }}</p>
+                        <p class=""
+{#                        <a class="btn btn-info" href="{% url 'certificates-add' %}">Încarcă certificate</a>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

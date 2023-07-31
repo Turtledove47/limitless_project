@@ -1,0 +1,8 @@
+.card {
+    border-radius: 10px;
+    background-color: #19262f;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: aqua;
+}

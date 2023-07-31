@@ -1,0 +1,27 @@
+
+{#TODO: User profile >>> upload certificates if missed at signup#}
+
+{% extends 'base.html' %}
+{% block title %}Încarcă un PDF{% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Încarcă un certificat</h3>
+                    </div>
+                    <br><br>
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="card-body" class="post-form">
+                            {{ form.as_p }}
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-info">Salvează</button>
+                            <a href="{% url 'user_profile' %}" class="btn btn-outline-danger">Renunță</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+{% endblock %}

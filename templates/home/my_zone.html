@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}My Zone{% endblock %}
+{% block content %}
+    <div class="container-fluid" data-bs-theme="dark">
+        <div class="col-md-6 offset-md-3">
+            <div class="flex-container row row-cols-2">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <p class="card-text fs-2 mb-2">Operator existent</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="fs-5 my-auto">Bine ai revenit!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{% url 'login' %}" class="fs-5 btn btn-info">Login</a>
+                        </div>
+                    </div><br>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <p class="card-text fs-2 mb-2">Operator nou</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="fs-5 mb-2">Dacă ești pilot și dorești să-ți înregistrezi zborurile online direct
+                                din teren,
+                                ai ajuns în locul potrivit! Te așteptăm pe cealaltă parte!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{% url 'create-user' %}" class="fs-5 btn btn-success">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

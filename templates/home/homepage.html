@@ -1,0 +1,574 @@
+{% extends 'base.html' %}
+{% block title %} Acasă {% endblock %}
+{% block content %}
+    {% load static %}
+    <div class="container-fluid" data-bs-theme="dark">
+        {#    <div class="container-fluid">#}
+        {#        <div class="d-inline-flex d-none d-lg-block">#}
+        {#            <img src="{% static 'images/Background.jpg' %}" alt="Background" width="100%">#}
+        {#        </div>#}
+        {#    </div>#}
+        <div class="col-md-12">
+            <div>
+                <div class="card-header text-center text-light mb-4">
+                    <p class="fs-1">Bine ați venit la Limitless FPV!</p>
+                    <p class="d-inline-flex text-wrap mt-4 fs-3 text-secondary-emphasis" style="width: 70%;">Echipa
+                        noastră se specializează în
+                        crearea
+                        de
+                        filme vizual impresionante folosind drone FPV
+                        (First Person View). Piloții noștri experimentați și echipamentul de ultimă generație ne
+                        permit
+                        să capturăm imagini unice și dinamice din perspectiva unei prime persoane. Servim o gamă
+                        largă
+                        de clienți, inclusiv afaceri comerciale, companii imobiliare, evenimente sportive și studiouri de producție
+                        cinematografică.</p>
+                    <p class="mt-3"><img src="{% static 'images/facebook.png' %}" width="50px"
+                                         onclick="window.open('https://www.facebook.com/LimitlessFPV','_blank')"> &nbsp;&nbsp;
+                        <img src="{% static 'images/instagram.png' %}" width="50px"
+                             onclick="window.open('https://www.instagram.com/limit_less.fpv','_blank')"> &nbsp;&nbsp;
+                        <img src="{% static 'images/youtube.png' %}" width="50px">
+                    </p>
+                </div>
+            </div>
+        </div>
+        {# Welcome message #}
+        <div class="d-inline-flex d-none d-lg-block col-2">
+            <nav id="navbar-example3" class="flex-column align-items-stretch card p-2" style="position: fixed">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link link-info fs-5" href="#Portofoliu">Portofoliu</a>
+                    <a class="nav-link link-info fs-5" href="#Piloți">Piloții noștri</a>
+                    <a class="nav-link link-info fs-5" href="#Proces">Procesul nostru</a>
+                    <a class="nav-link link-info fs-5" href="#Servicii">Serviciile noastre</a>
+                    <a class="nav-link link-info fs-5" href="#Condiții">Condiții și limitări</a>
+                    <a class="nav-link link-info fs-5" href="#FAQ">FAQ</a>
+                    <a class="nav-link link-info fs-5" href="#Prețuri">Prețuri și pachete</a>
+                    <a class="nav-link link-info fs-5" href="#Despre">Despre noi</a>
+                </nav>
+            </nav>
+        </div>
+        <br><br><br><br>
+        {# Homepage scrollspy #}
+        <div class="col-md-8 offset-md-2" id="Portofoliu">
+            <div class="card">
+                <div class="card-header text-center">
+                    <p class="fs-2">Portofoliu</p>
+                    <p class="fs-4">Vizualizați filmările noastre aeriene uimitoare și vedeți lumea dintr-o perspectivă
+                        unică.</p>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
+                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
+                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
+                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
+                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/instagram.png' %}"
+                                 onclick="window.open('https://www.instagram.com/limit_less.fpv','_blank')" width="50px"
+                                 alt="Ștefan">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/instagram.png' %}"
+                                 onclick="window.open('https://www.instagram.com/_rarrrres_fpv_/','_blank')"
+                                 width="50px"
+                                 alt="Rareș">
+                        </div>
+
+                    </div>
+
+                    {#                        TODO: add image and video links, card style#}
+
+                </div>
+            </div>
+        </div>
+        {# Portofoliu #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Piloți">
+            <div class="card">
+                <div class="card-header">
+                    <p class="text-center fs-2">Piloții noștri</p>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            {#                            <div class="card">#}
+                            {#                                <div class="card-body">#}
+                            <p class="text-center mb-3 fs-3">Ștefan</p>
+                            <img src="{% static 'images/IM5_7384.jpg' %}" class="img-fluid rounded mt-2" alt="Stefan">
+                            <br><br>
+                            <p class="p-2 fs-5">Pilotul nostru principal de drone aduce ani de experiență și o pasiune
+                                pentru
+                                capturarea de
+                                imagini uluitoare în fiecare proiect la care lucrează. Cu o privire atentă
+                                la
+                                detalii și un
+                                angajament pentru excelență, el este sigur să livreze rezultate
+                                impresionante
+                                care
+                                depășesc
+                                așteptările dvs.</p>
+                            {#                                </div>#}
+                            {#                            </div>#}
+                        </div>
+                        <div class="col">
+                            {#                            <div class="card">#}
+                            {#                                <div class="card-body">#}
+                            <p class="card-text text-center mb-3 fs-3">Rareș</p>
+                            <img src="{% static 'images/IM5_7364.jpg' %}" class="img-fluid rounded mt-2" alt="Rares">
+                            <br><br>
+                            <p class="p-2 fs-5">Al doilea pilot al nostru de drone este un expert în capturarea de
+                                imagini
+                                uimitoare
+                                de
+                                peisaje urbane și a orașelor. Cu o pasiune pentru a depăși limitele a ceea
+                                ce
+                                este
+                                posibil,
+                                el este sigur să vă ajute să dați viață viziunii dumneavoastră și să
+                                capturați
+                                imagini
+                                care
+                                vor lăsa publicul dumneavoastră cu gura căscată. </p>
+                            {#                                </div>#}
+                            {#                            </div>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Pilotii nostri #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Proces">
+            <div class="card">
+                <div class="card-header text-center">
+                    <p class="mb-2 fs-2">Procesul nostru</p>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex row row-cols-3">
+                        <div class="col my-4">
+                            <img src="{% static 'images/1.png' %}" class="d-flex mx-auto" width="30%" alt="1">
+                        </div>
+                        <div class="col my-4">
+                            <img src="{% static 'images/2.png' %}" class="d-flex mx-auto" width="30%" alt="2">
+                        </div>
+                        <div class="col my-4">
+                            <img src="{% static 'images/3.png' %}" class="d-flex mx-auto" width="30%" alt="3">
+                        </div>
+                        <div class="col px-2">
+                            <p class="text-center fs-3">Planificarea</p>
+                            <p class="text-center px-4 fs-5">Experții noștri piloți examinează zona proiectului dvs. și
+                                creează planuri de zbor
+                                pentru a
+                                da
+                                viață viziunii dvs.</p>
+                        </div>
+                        <div class="col px-2">
+                            <p class="text-center fs-3">Filmarea</p>
+                            <p class="text-center px-4 fs-5">Piloții noștri de drone utilizează echipamente de ultimă
+                                generație pentru a captura
+                                imaginile
+                                impresionante a proiectului dvs.</p>
+                        </div>
+                        <div class="col px-2">
+                            <p class="text-center fs-3">Editarea</p>
+                            <p class="text-center px-4 fs-5">Echipa noastră de editori profesioniști va îmbunătăți
+                                înregistrările dumneavoastră
+                                și va
+                                crea un
+                                produs final pe care îl veți iubi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Procesul nostru #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Servicii">
+            <div class="card">
+                <div class="card-header text-center">
+                    <p class="mb-2 fs-2">Serviciile noastre</p>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-3">
+                        <div class="col mt-3">
+                            <img src="{% static 'images/Doru_transalpina.png' %}" class="card-img-top rounded img-fluid"
+                                 alt="videography">
+                        </div>
+                        <div class="col mt-3">
+                            <img src="{% static 'images/Workbench.png' %}" class="card-img-top rounded img-fluid"
+                                 alt="workspace">
+                        </div>
+                        <div class="col mt-3">
+                            <img src="{% static 'images/Idea-01.png' %}" class="card-img-top rounded img-fluid"
+                                 alt="Photo by Diego PH on Unsplash">
+                        </div>
+                        <div class="col px-3">
+                            {#                            <div class="card-body">#}
+
+                            <p class="text-center fs-3 mt-3">Videografie</p>
+                            <p class="text-center fs-5">Experimentează o perspectivă nouă asupra lumii cu imagini
+                                aeriene impresionante
+                                ale
+                                peisajelor,
+                                clădirilor și evenimentelor.</p>
+                            {#                            </div>#}
+                        </div>
+                        <div class="col px-3">
+                            {#                            <div class="card-body">#}
+
+                            <p class="text-center fs-3 mt-3">Reparații și Mentenanță</p>
+                            <p class="text-center fs-5">Putem ajuta la repararea și întreținerea dronelor dvs. pentru
+                                zboruri line, fără
+                                întreruperi.</p>
+                            {#                            </div>#}
+                        </div>
+                        <div class="col px-3">
+                            {#                            <div class="card-body">#}
+
+                            <p class="text-center fs-3 mt-3">Instruire</p>
+                            <p class="text-center fs-5">Descoperă întregul potențial al tău cu ajutorul antrenamentelor
+                                noastre complete
+                                care
+                                acoperă
+                                totul, de la abilitățile de zbor până la abilitățile de construire a
+                                dronelor.</p>
+                            {#                            </div>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Serviciile noastre #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Condiții">
+            <div class="card">
+                <div class="card-header text-center">
+                    <p class="mb-2 fs-2">Condiții și limitări</p>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p class="fs-4 my-auto">Depindem de condițiile meteorologice ideale pentru a asigura
+                                        o operațiune
+                                        fără
+                                        probleme:</p>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body fs-5">
+                                    <li>Dronele noastre sunt concepute să înfrunte elementele, dar ploaia poate afecta
+                                        calitatea videoului;
+                                    </li>
+                                    <li>Zilele cu vânt puternic pot reprezenta o provocare pentru orice dronă, dar ale
+                                        noastre sunt pregătite pentru orice. Cu toate acestea, pentru cea mai bună
+                                        calitate
+                                        video posibilă, încercăm să evităm filmarea în condiții de vânt puternic;
+                                    </li>
+                                    <li>Când vine vorba de zile însorite, nu ne mai săturăm de ele! Cu cât este mai
+                                        luminos,
+                                        cu atât putem obține imagini mai impresionante.
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p class="fs-4 my-auto">Regulamentele și restricționările nu trebuie să stea în
+                                        calea capturării
+                                        unor
+                                        imagini
+                                        aeriene uimitoare. Vă vom ajuta să pilotați prin terenul legal:</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body fs-5">
+                                    <li>Vrei să surprinzi imagini ale unui eveniment animat? Suntem cu totul pentru
+                                        asta!
+                                        Dacă ești organizatorul, dă-ne doar undă verde și noi vom face ca asta să se
+                                        întâmple.
+                                    </li>
+                                    <li>Filmatul într-un oraș poate fi o provocare, dar suntem pregătiți pentru asta!
+                                        Vom
+                                        lucra împreună cu tine pentru a găsi cea mai bună soluție pentru proiectul tău.
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Conditii si limitari #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="FAQ">
+            <div class="card">
+                <div class="card-header text-center">
+                    <p class="mb-2 fs-2">FAQ</p>
+                </div>
+                <div class="row m-3">
+                    <p class="text-center mt-2 fs-3">Ce servicii oferiți?</p>
+                    <p class="text-center mt-2 fs-5">Noi oferim o gamă largă de servicii, inclusiv
+                        filmări aeriene și fotografii cu drona
+                        pentru
+                        sporturi, nunți și alte evenimente sportive, precum și mentenanță sau producție video pentru
+                        reclame și
+                        materiale
+                        promoționale.</p>
+                    <p class="border-top mt-2"></p>
+                    <p class="text-center mt-2 fs-3">Ce echipamente folosiți?</p>
+                    <p class="text-center mt-2 fs-5">Cu arsenalul nostru de echipamente de calitate
+                        profesională, inclusiv drone DJI și
+                        drone
+                        FPV
+                        cu
+                        camere capabile de 5K, avem tot ce ne trebuie pentru a captura evenimentul
+                        dumneavoastră.</p>
+                    <p class="border-top mt-2"></p>
+                    <p class="text-center mt-2 fs-3">Oferiți instruire?</p>
+                    <p class="text-center mt-2 fs-5">Da, avem o serie de opțiuni de instruire
+                        pentru a vă ajuta să deveniți un pilot
+                        priceput
+                        de
+                        drone. De la construirea și configurarea propriului dvs. drone pentru primul său
+                        zbor,
+                        până
+                        la
+                        instruire practică de zbor cu piloții noștri experți, vă vom oferi tot ce aveți
+                        nevoie
+                        pentru a
+                        zbura în siguranță și cu încredere.</p>
+                    <p class="border-top mt-2"></p>
+                    <p class="text-center mt-2 fs-3">Care este timpul de procesare pentru imaginile
+                        mele?</p>
+                    <p class="text-center mt-2 fs-5">Timpul necesar pentru finalizarea proiectului
+                        variază în funcție de acesta. Îți vom
+                        oferi o
+                        estimare a perioadei de așteptare în timpul consultației inițiale.</p>
+                </div>
+            </div>
+        </div>
+        {# FAQ #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Prețuri">
+            <div class="card">
+                <div class="card-header">
+                    <p class="text-center mb-2 fs-2">Prețuri și pachete</p>
+                </div>
+                <div class="row row-cols-2">
+                    <div class="col my-auto">
+                        <p class="text-center mx-4 my-auto fs-3">Pachet de filmare video comercială și de produs</p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Imaginează-ți produsul dintr-o perspectivă complet nouă. Cu piloții
+                            noștri
+                            experți în
+                            FPV,
+                            puteți
+                            captura imagini aeriene uimitoare și unghiuri la care nu ați fi gândit niciodată, ceea
+                            ce va
+                            duce
+                            marketingul la noi culmi.</p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center mx-4 my-auto fs-3">Pachet videografie evenimente</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți evenimentul dvs. cu adevărat de neuitat cu pachetul nostru de
+                            video
+                            FPV. Tarifele
+                            noastre
+                            variază în funcție de complexitatea și durata videoclipului
+                            final.
+                            Contactați-ne astăzi pentru a afla mai multe și pentru a începe.
+                        </p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center mx-4 my-auto fs-3">Pachet de filmare video imobiliare</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți ca Airbnb-ul dvs. să iasă în evidență cu un film FPV imersiv!
+                            Începând de la doar
+                            1000
+                            RON,
+                            echipa noastră poate captura fiecare detaliu al locației dvs. uimitoare chiar dintr-un
+                            singur
+                            cadru.
+                        </p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center mx-4 my-auto fs-3">Pachet de cartografiere, topografie și fotogrametrie</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Putem realiza fotografii cu rezoluție înaltă a proprietății
+                            dumneavoastră
+                            și
+                            le putem
+                            compila într-o singură fotografie detaliată 2D sau 3D, perfectă pentru managementul
+                            terenurilor și
+                            construcții.
+                        </p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center my-auto fs-3">Pachet service și mentenanță</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Bucură-te de zborul liber fără griji cu serviciile noastre complete
+                            de
+                            reparații și
+                            întreținere.
+                            Contactează-ne astăzi pentru o ofertă.
+                        </p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center my-auto fs-3">Pachet training</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">De la construirea dronelor la antrenamentul de pilotaj, oferim o
+                            gamă
+                            completă de
+                            servicii
+                            de
+                            instruire pentru a vă ajuta să profitați la maximum de drona dumneavoastră.
+                            Contactați-ne
+                            astăzi
+                            pentru a afla mai multe și pentru a obține o ofertă.
+                        </p>
+                    </div>
+                    <div class="col my-auto">
+                        <p class="text-center my-auto fs-3">Pachet personal</p>
+                    </div>
+                    <div class="col my-auto">
+                        <div class="border top mx-4"></div>
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Capturează-ți momentele cele mai sălbatice pe cameră cu pachetul
+                            nostru
+                            video plin
+                            de
+                            adrenalină. De
+                            la plimbări cu bicicleta la MTB agresiv, drifturi cu mașina, videoclipuri muzicale sau
+                            bungee
+                            jumping - te acoperim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Preturi si pachete #}
+        <br><br><br><br>
+        <div class="col-md-8 offset-md-2" id="Despre">
+            <div class="card">
+                <div class="card-header">
+                    <p class="text-center mb-2 fs-2">Despre noi</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="text-center mt-3 fs-3">Viziunea noastră</p>
+                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați să depășim limitele și să luăm calea mai
+                                puțin
+                                parcursă.
+                                De
+                                aceea,
+                                ne concentrăm pe furnizarea unor unghiuri și imagini aeriene de neimaginat, care vă
+                                vor
+                                lăsa
+                                fără
+                                cuvinte.</p>
+                            <p class="text-center fs-5">Echipa noastră de piloți și operatori de dronă experimentați este pasionată
+                                să
+                                captureze
+                                imagini
+                                uimitoare din perspective unice. Folosim tehnologie de ultimă generație pentru a
+                                crea
+                                cadre
+                                cinematografice și netede care evidențiază frumusețea lumii înconjurătoare.</p>
+                            <p class="text-center fs-5">Fie că doriți să capturați un eveniment corporativ din cer, să adăugați
+                                puțină emoție
+                                videoclipului
+                                de nuntă sau să creați un videoclip promoțional pentru afacerea dvs., Limitless FPV
+                                vă
+                                poate
+                                ajuta.</p>
+                            <p class="text-center fs-5">Contactați-ne astăzi pentru a vedea lumea dintr-o nouă perspectivă și pentru
+                                a
+                                descoperi
+                                cum
+                                vă
+                                putem ajuta să vă duceți proiectele la noi înălțimi!</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="text-center mt-3 fs-3">Misiunea noastră</p>
+                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați capturării unor imagini aeriene uimitoare
+                                care spun
+                                o
+                                poveste
+                                și
+                                lasă o impresie durabilă. Pasinea noastră pentru filmarea cu drone ne motivează să
+                                oferim
+                                servicii
+                                și videoclipuri de cea mai înaltă calitate clienților noștri.</p>
+                            <p class="text-center fs-5">Echipa noastră de piloți și cinematografi experimentați de drone este
+                                dedicată
+                                aducerii
+                                viziunii
+                                dvs. la viață. Lucrăm îndeaproape cu dvs. pentru a înțelege obiectivele dvs. și
+                                pentru a
+                                crea un
+                                videoclip personalizat care să prezinte povestea dvs. unică și să inspire
+                                publicul.</p>
+                            <p class="text-center fs-5">Indiferent dacă doriți să creați un videoclip promoțional pentru afacerea
+                                dvs. sau să
+                                capturați
+                                un
+                                eveniment special dintr-o perspectivă unică, vă puteți baza pe noi. Gama noastră de
+                                servicii
+                                include
+                                filmarea aeriană, editarea în post-producție și multe altele.</p>
+                            <p class="text-center fs-5">Suntem mândri de munca noastră și suntem angajați să depășim așteptările
+                                dvs.
+                                Contactați-ne
+                                astăzi
+                                pentru a afla mai multe despre cum vă putem ajuta să luați proiectul dvs. la nivelul
+                                următor
+                                cu
+                                imagini uimitoare de drone care vor lăsa publicul dvs. în uimire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Despre noi #}
+    </div>
+    <br><br><br><br>
+    <div class="card" data-bs-theme="dark">
+        <div class="card-footer text-center fs-5">
+            Logo by <a onclick="window.open('https://www.defineflv.com','_blank')">defineflv</a>
+            <p class="text-center p-2 m-0">LimitlessFPV<sup>TM</sup></p>
+        </div>
+    </div>
+{% endblock %}
