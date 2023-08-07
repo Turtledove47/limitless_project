@@ -1,6 +1,7 @@
+from django.contrib.auth.forms import PasswordResetForm
 from django.urls import path
 from home import views
-
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
 	path('', views.HomeTemplateView.as_view(), name='homepage'),
@@ -14,6 +15,6 @@ urlpatterns = [
 	path('MyZone/add_flight/', views.FlightCreateView.as_view(), name='flight-add'),
 	path('MyZone/add_aircraft/', views.AircraftCreateView.as_view(), name='aircraft-add'),
 	path('contact_form/', views.ContactCreateView.as_view(), name='contact'),
-	path('MyZone/add_certificates/<int:pk>', views.OperatorUpdateView.as_view(), name='certificates-add'),
-	path('password_reset/', views.PassResetView.as_view(), name='password-reset'),
+	# path('MyZone/add_certificates/<int:pk>', views.OperatorUpdateView.as_view(), name='certificates-add'),
+	path('password-reset/', auth_views.PasswordResetView.as_view(form_class=PasswordResetForm), name='password_reset'),
 ]

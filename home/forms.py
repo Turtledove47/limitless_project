@@ -24,6 +24,7 @@ class UserForm(UserCreationForm):
 		self.fields['caa_code'].widget.attrs.update(
 			{'class': 'form-control', 'placeholder': 'Codul CAA fără ultimele 3 cifre'})
 		self.fields['email'].widget.attrs.update({'class': 'form-control', 'placeholder': 'Adresa de e-mail'})
+		# self.fields['username'].widget.attrs.update({'class': 'form-control', 'placeholder': 'Alege un username pentru login'})
 		self.fields['password1'].widget.attrs.update(
 			{'class': 'form-control', 'placeholder': 'Introdu parola'})
 		self.fields['password2'].widget.attrs.update(
@@ -80,7 +81,7 @@ class ChangePasswordForm(PasswordChangeForm):
 class FlightUpdateForm(forms.ModelForm):
 	class Meta:
 		model = FlightLog
-		fields = '__all__'
+		fields = ['aircraft', 'latitude', 'longitude', 'details', 'batteries_flown']
 		widgets = {
 			'aircraft': forms.Select(attrs={'placeholder': 'Selectează drona', 'class': 'form-select'}),
 			'latitude': NumberInput(attrs={'placeholder': 'Latitudinea', 'class': 'form-control'}),

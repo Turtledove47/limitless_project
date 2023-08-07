@@ -163,15 +163,15 @@ class OperatorUpdateView(UpdateView):
 	success_url = reverse_lazy('user_profile')
 
 
-class PassResetView(UpdateView):
-	template_name = 'registration/passrword_reset_form.html'
-	model = Operator
-	form_class = PasswordResetForm
-	success_url = reverse_lazy('homepage')
-
-	def get_context_data(self, **kwargs):
-		context = super().get_context_data(**kwargs)
-		form = context['form']
-		form.fields['email'].queryset = Aircraft.objects.filter(owner=self.request.user)
-		context['form'] = form
-		return context
+# class PassResetView(UpdateView):
+# 	template_name = 'registration/password_reset_form.html'
+# 	model = Operator
+# 	form_class = PasswordResetForm
+# 	success_url = reverse_lazy('homepage')
+#
+# 	def get_context_data(self, **kwargs):
+# 		context = super().get_context_data(**kwargs)
+# 		form = context['form']
+# 		form.fields['email'].queryset = Aircraft.objects.filter(owner=self.request.user)
+# 		context['form'] = form
+# 		return context

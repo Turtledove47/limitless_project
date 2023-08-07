@@ -21,13 +21,14 @@
                         permit
                         să capturăm imagini unice și dinamice din perspectiva unei prime persoane. Servim o gamă
                         largă
-                        de clienți, inclusiv afaceri comerciale, companii imobiliare, evenimente sportive și studiouri de producție
+                        de clienți, inclusiv afaceri comerciale, companii imobiliare, evenimente sportive și studiouri
+                        de producție
                         cinematografică.</p>
                     <p class="mt-3"><img src="{% static 'images/facebook.png' %}" width="50px"
-                                         onclick="window.open('https://www.facebook.com/LimitlessFPV','_blank')"> &nbsp;&nbsp;
+                                         onclick="window.open('https://www.facebook.com/LimitlessFPV','_blank')" alt="Facebook"> &nbsp;&nbsp;
                         <img src="{% static 'images/instagram.png' %}" width="50px"
-                             onclick="window.open('https://www.instagram.com/limit_less.fpv','_blank')"> &nbsp;&nbsp;
-                        <img src="{% static 'images/youtube.png' %}" width="50px">
+                             onclick="window.open('https://www.instagram.com/limit_less.fpv','_blank')" alt="Instagram"> &nbsp;&nbsp;
+                        {#                        <img src="{% static 'images/youtube.png' %}" width="50px">#}
                     </p>
                 </div>
             </div>
@@ -58,28 +59,47 @@
                 </div>
                 <div class="card-body">
                     <div class="row row-cols-2">
-                        <div class="col">
-                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
-                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        <div class="col my-2">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
+                                        title="Runcu 4x4" class="rounded"
+                                        allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
-                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        <div class="col my-2">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F1445832909550269%2F&show_text=false&width=267&t=0"
+                                        title="Forest play" class="rounded"
+                                        allowfullscreen></iframe>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
-                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+{#                        <div class="col my-2">#}
+{#                            <div class="ratio ratio-16x9">#}
+{#                                <iframe src="" title="" class="rounded"#}
+{#                                        allowfullscreen></iframe>#}
+{#                            </div>#}
+{#                        </div>#}
+                        <div class="col my-2">
+                            <div class="ratio ratio-16x9">
+                                <img class="rounded" src="{% static 'images/Masina_limitless.JPG' %}" alt="Masina">
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FLimitlessFPV%2Fvideos%2F602257142088802%2F&show_text=false&width=560&t=0"
-                                 width="560" height="314" style="border:none;overflow:hidden" alt="Runcu">
+                        <div class="col my-2">
+                            <div class="ratio ratio-16x9">
+                                <img class="rounded" src="{% static 'images/Doru_transalpina_2.jpg' %}" alt="Transalpina">
+                            </div>
                         </div>
-                        <div class="col">
+                        <div class="col my-2">
+                            <div class="ratio ratio-16x9">
+                                <img class="rounded" src="{% static 'images/Doru.JPG' %}" alt="Echipament">
+                            </div>
+                        </div>
+                        <div class="col my-2 text-center">
                             <img src="{% static 'images/instagram.png' %}"
                                  onclick="window.open('https://www.instagram.com/limit_less.fpv','_blank')" width="50px"
                                  alt="Ștefan">
                         </div>
-                        <div class="col">
+                        <div class="col my-2 text-center">
                             <img src="{% static 'images/instagram.png' %}"
                                  onclick="window.open('https://www.instagram.com/_rarrrres_fpv_/','_blank')"
                                  width="50px"
@@ -87,9 +107,6 @@
                         </div>
 
                     </div>
-
-                    {#                        TODO: add image and video links, card style#}
-
                 </div>
             </div>
         </div>
@@ -378,7 +395,8 @@
                         <p class="text-center mx-4 my-auto fs-3">Pachet de filmare video comercială și de produs</p>
                     </div>
                     <div class="col my-auto">
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Imaginează-ți produsul dintr-o perspectivă complet nouă. Cu piloții
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Imaginează-ți produsul dintr-o perspectivă complet
+                            nouă. Cu piloții
                             noștri
                             experți în
                             FPV,
@@ -393,7 +411,8 @@
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți evenimentul dvs. cu adevărat de neuitat cu pachetul nostru de
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți evenimentul dvs. cu adevărat de neuitat cu
+                            pachetul nostru de
                             video
                             FPV. Tarifele
                             noastre
@@ -407,7 +426,8 @@
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți ca Airbnb-ul dvs. să iasă în evidență cu un film FPV imersiv!
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Faceți ca Airbnb-ul dvs. să iasă în evidență cu un
+                            film FPV imersiv!
                             Începând de la doar
                             1000
                             RON,
@@ -417,11 +437,13 @@
                         </p>
                     </div>
                     <div class="col my-auto">
-                        <p class="text-center mx-4 my-auto fs-3">Pachet de cartografiere, topografie și fotogrametrie</p>
+                        <p class="text-center mx-4 my-auto fs-3">Pachet de cartografiere, topografie și
+                            fotogrametrie</p>
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Putem realiza fotografii cu rezoluție înaltă a proprietății
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Putem realiza fotografii cu rezoluție înaltă a
+                            proprietății
                             dumneavoastră
                             și
                             le putem
@@ -435,7 +457,8 @@
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Bucură-te de zborul liber fără griji cu serviciile noastre complete
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Bucură-te de zborul liber fără griji cu serviciile
+                            noastre complete
                             de
                             reparații și
                             întreținere.
@@ -447,7 +470,8 @@
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">De la construirea dronelor la antrenamentul de pilotaj, oferim o
+                        <p class="text-center lh-base mx-3 my-3 fs-5">De la construirea dronelor la antrenamentul de
+                            pilotaj, oferim o
                             gamă
                             completă de
                             servicii
@@ -463,7 +487,8 @@
                     </div>
                     <div class="col my-auto">
                         <div class="border top mx-4"></div>
-                        <p class="text-center lh-base mx-3 my-3 fs-5">Capturează-ți momentele cele mai sălbatice pe cameră cu pachetul
+                        <p class="text-center lh-base mx-3 my-3 fs-5">Capturează-ți momentele cele mai sălbatice pe
+                            cameră cu pachetul
                             nostru
                             video plin
                             de
@@ -487,7 +512,8 @@
                     <div class="col">
                         <div class="card-body">
                             <p class="text-center mt-3 fs-3">Viziunea noastră</p>
-                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați să depășim limitele și să luăm calea mai
+                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați să depășim limitele și să luăm
+                                calea mai
                                 puțin
                                 parcursă.
                                 De
@@ -497,7 +523,8 @@
                                 lăsa
                                 fără
                                 cuvinte.</p>
-                            <p class="text-center fs-5">Echipa noastră de piloți și operatori de dronă experimentați este pasionată
+                            <p class="text-center fs-5">Echipa noastră de piloți și operatori de dronă experimentați
+                                este pasionată
                                 să
                                 captureze
                                 imagini
@@ -505,14 +532,16 @@
                                 crea
                                 cadre
                                 cinematografice și netede care evidențiază frumusețea lumii înconjurătoare.</p>
-                            <p class="text-center fs-5">Fie că doriți să capturați un eveniment corporativ din cer, să adăugați
+                            <p class="text-center fs-5">Fie că doriți să capturați un eveniment corporativ din cer, să
+                                adăugați
                                 puțină emoție
                                 videoclipului
                                 de nuntă sau să creați un videoclip promoțional pentru afacerea dvs., Limitless FPV
                                 vă
                                 poate
                                 ajuta.</p>
-                            <p class="text-center fs-5">Contactați-ne astăzi pentru a vedea lumea dintr-o nouă perspectivă și pentru
+                            <p class="text-center fs-5">Contactați-ne astăzi pentru a vedea lumea dintr-o nouă
+                                perspectivă și pentru
                                 a
                                 descoperi
                                 cum
@@ -523,7 +552,8 @@
                     <div class="col">
                         <div class="card-body">
                             <p class="text-center mt-3 fs-3">Misiunea noastră</p>
-                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați capturării unor imagini aeriene uimitoare
+                            <p class="text-center fs-5">La Limitless FPV, suntem dedicați capturării unor imagini
+                                aeriene uimitoare
                                 care spun
                                 o
                                 poveste
@@ -532,7 +562,8 @@
                                 oferim
                                 servicii
                                 și videoclipuri de cea mai înaltă calitate clienților noștri.</p>
-                            <p class="text-center fs-5">Echipa noastră de piloți și cinematografi experimentați de drone este
+                            <p class="text-center fs-5">Echipa noastră de piloți și cinematografi experimentați de drone
+                                este
                                 dedicată
                                 aducerii
                                 viziunii
@@ -541,7 +572,8 @@
                                 crea un
                                 videoclip personalizat care să prezinte povestea dvs. unică și să inspire
                                 publicul.</p>
-                            <p class="text-center fs-5">Indiferent dacă doriți să creați un videoclip promoțional pentru afacerea
+                            <p class="text-center fs-5">Indiferent dacă doriți să creați un videoclip promoțional pentru
+                                afacerea
                                 dvs. sau să
                                 capturați
                                 un
@@ -549,7 +581,8 @@
                                 servicii
                                 include
                                 filmarea aeriană, editarea în post-producție și multe altele.</p>
-                            <p class="text-center fs-5">Suntem mândri de munca noastră și suntem angajați să depășim așteptările
+                            <p class="text-center fs-5">Suntem mândri de munca noastră și suntem angajați să depășim
+                                așteptările
                                 dvs.
                                 Contactați-ne
                                 astăzi
